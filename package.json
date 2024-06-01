@@ -1,0 +1,36 @@
+{
+  "name": "new-music",
+  "version": "1.0.0",
+  "description": "A simple music bot",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && node ./dist/index.js",
+    "start": "node ./dist/index.js",
+    "lint": "biome lint --apply ./src",
+    "format": "biome check --apply ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "lint-staged": {
+    "*.ts": [
+      "biome check --apply",
+      "biome format --write"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "seyfert": "github:tiramisulabs/seyfert",
+    "shoukaku": "github:shipgirlproject/Shoukaku#978635d5d51aaee05cf0d84b6dcbff4aa489000e",
+    "yunaforseyfert": "^0.10.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@types/node": "^20.12.13",
+    "lint-staged": "^15.2.5",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.1.2"
+}
