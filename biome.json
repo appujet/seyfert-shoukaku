@@ -51,8 +51,7 @@
         "ignore": [
             ".vscode",
             "node_modules",
-            "dist",
-            "environment.ts"
+            "dist"
         ]
     },
     "json": {
